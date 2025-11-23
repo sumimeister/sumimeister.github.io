@@ -18,7 +18,7 @@
   </head>
   <body>
     <div class="view-tile absolute left-0 top-0 z-50 pointer-events-none" id="particles"></div>
-    <div class="view-tile flex items-center justify-center flex-col">
+    <div class="view-tile flex items-center justify-center flex-col py-8">
       <div class="grow flex flex-col items-center justify-center">
         <span class="view-title animate__animated animate__fadeIn animate__slow">尾矢すみ</span>
         <div class="pt-12 join">
@@ -35,55 +35,54 @@
         </aside>
       </footer>
     </div>
-    <dialog class="modal" id="modal__about">
-      <div class="modal-box max-w-prose">
-        <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
-        <div class="md:text-2xl text-xl font-bold">自介</div>
-        <hr class="my-8" />
-        <div class="grid grid-cols-1 md:grid-cols-2">
-          <img src="static/img/shanhai-nobg-flip.webp" />
-          <div class="text-base">
-            <p class="font-bold uppercase" style="color: #73c2fb">Oya Sumi</p>
-            <p class="text-3xl font-bold" style="color: #73c2fb">尾矢すみ</p>
-            <p style="color: #73c2fb">酥米、林昕渪</p>
-            <br />
-            <p>○ FPS Games</p>
-            <p>△ Bass Guitar</p>
-            <p>△ Illustration</p>
-            <p>○ Weeb</p>
-            <div class="divider"></div>
-            <p class="text-base">
-              <i class="bi-discord mr-1"></i>
-              <span>@stevesepp87</span>
-            </p>
-            <p class="text-base">
-              <i class="bi bi-twitter mr-1"></i>
-              <a class="link link-accent link-hover" href="https://x.com/SteveSepp87">@SteveSepp87</a>
-            </p>
-            <p class="text-base">
-              <i class="bi bi-youtube mr-1"></i>
-              <a class="link link-accent link-hover" href="https://www.youtube.com/@stevesepp87">尾矢すみ</a>
-            </p>
-            <p class="text-base">
-              <i class="bi bi-youtube mr-1"></i>
-              <a class="link link-accent link-hover" href="https://www.youtube.com/@尾矢すみsub">尾矢すみSub</a>
-            </p>
+    <dialog class="modal p-4" id="modal__about">
+      <div class="modal-box max-w-prose border border-slate-400 overflow-hidden">
+        <div class="z-10 relative">
+          <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
+          <div class="md:text-2xl text-xl font-bold">自介</div>
+          <hr class="my-8" />
+          <div class="grid gap-x-8 grid-cols-1 md:grid-cols-2">
+            <img src="static/img/shanhai-nobg-flip.webp" />
+            <div class="text-base">
+              <p class="font-bold uppercase" style="color: #73c2fb">Oya Sumi</p>
+              <p class="text-3xl font-bold" style="color: #73c2fb">尾矢すみ</p>
+              <p style="color: #73c2fb">酥米、林昕渪</p>
+              <br />
+              <p>○ FPS Games</p>
+              <p>△ Bass Guitar</p>
+              <p>△ Illustration</p>
+              <p>○ Weeb</p>
+              <div class="divider"></div>
+              <p class="text-base">
+                <i class="bi-discord mr-1"></i>
+                <span>@stevesepp87</span>
+              </p>
+              <p class="text-base">
+                <i class="bi bi-twitter mr-1"></i>
+                <a class="link link-accent link-hover" href="https://x.com/SteveSepp87">@SteveSepp87</a>
+              </p>
+              <p class="text-base">
+                <i class="bi bi-youtube mr-1"></i>
+                <a class="link link-accent link-hover" href="https://www.youtube.com/@stevesepp87">尾矢すみ</a>
+              </p>
+              <p class="text-base">
+                <i class="bi bi-youtube mr-1"></i>
+                <a class="link link-accent link-hover" href="https://www.youtube.com/@尾矢すみsub">尾矢すみSub</a>
+              </p>
+              <p class="text-base">
+                <i class="bi bi-box-arrow-up-right mr-1"></i>
+                <button class="link link-accent link-hover" data-dialog-toggle="modal__mobilegames">手遊</button>
+              </p>
+            </div>
           </div>
+          <div class="divider"></div>
         </div>
-        <div class="divider"></div>
-        <ul class="menu bg-base-200 rounded-box w-full">
-          <li>
-            <a class="text-lg" href="SkillTree.html">
-              <i class="bi bi-person-fill-gear"></i>
-              技能樹
-            </a>
-          </li>
-        </ul>
+        <div class="bg-slate-800 grayscale-50 border border-slate-600 z-0 h-[500%] w-[500%] fixed -rotate-[24deg] md:rotate-12 top-1/6 md:-top-9/12 left-0 md:left-1/4"></div>
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__about"></div>
     </dialog>
-    <dialog class="modal" id="modal__songlist">
-      <div class="modal-box max-w-prose">
+    <dialog class="modal p-4" id="modal__songlist">
+      <div class="modal-box max-w-prose border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__songlist">✕</button>
         <div class="md:text-2xl text-xl font-bold">歌單推薦</div>
         <hr class="my-8" />
@@ -100,8 +99,8 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__songlist"></div>
     </dialog>
-    <dialog class="modal" id="modal__discord">
-      <div class="modal-box max-w-prose">
+    <dialog class="modal p-4" id="modal__discord">
+      <div class="modal-box max-w-prose border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__discord">✕</button>
         <div class="md:text-2xl text-xl font-bold mb-8">非官方 Gawr Gura Discord 粉絲群</div>
         <div class="mockup-window bg-base-300 border w-full">
@@ -129,6 +128,38 @@
         </div>
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__discord"></div>
+    </dialog>
+    <dialog class="modal p-4" id="modal__mobilegames">
+      <div class="modal-box max-w-prose border border-slate-400">
+        <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__mobilegames">✕</button>
+        <div class="md:text-2xl text-xl font-bold">手遊</div>
+        <hr class="my-8" />
+          <div class="grid grid-cols-2">
+            <img class="h-20" src="static/img/gf.webp" />
+            <div class="text-base">
+              <p class="text-2xl font-bold" title="少女前線">格里芬指揮官</p>
+              <p>UID: 3447</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="grid grid-cols-2">
+            <img class="h-20" src="static/img/gf2.webp" />
+            <div class="text-base">
+              <p class="text-2xl font-bold" title="少女前線2：追放">指揮官</p>
+              <p>UID: 3372080</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+          <div class="grid grid-cols-2">
+            <img class="h-20" src="static/img/zzz.webp" />
+            <div class="text-base">
+              <p class="text-2xl font-bold" title="絕區零">繩匠</p>
+              <p>UID: 1312987284</p>
+            </div>
+          </div>
+          <div class="divider"></div>
+        </div>
+      </div>
     </dialog>
   </body>
 </html>
