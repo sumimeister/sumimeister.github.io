@@ -35,54 +35,51 @@
         </aside>
       </footer>
     </div>
-    <dialog class="modal p-4" id="modal__about">
-      <div class="modal-box max-w-prose border border-slate-400 overflow-hidden">
-        <div class="z-10 relative">
-          <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
-          <div class="md:text-2xl text-xl font-bold">自介</div>
-          <hr class="my-8" />
-          <div class="grid gap-x-8 grid-cols-1 md:grid-cols-2">
-            <img src="static/img/shanhai-nobg-flip.webp" />
-            <div class="text-base">
-              <p class="font-bold uppercase" style="color: #73c2fb">Oya Sumi</p>
-              <p class="text-3xl font-bold" style="color: #73c2fb">尾矢すみ</p>
-              <p style="color: #73c2fb">酥米、林昕渪</p>
-              <br />
-              <p>○ FPS Games</p>
-              <p>△ Bass Guitar</p>
-              <p>△ Illustration</p>
-              <p>○ Weeb</p>
-              <div class="divider"></div>
-              <p class="text-base">
-                <i class="bi-discord mr-1"></i>
-                <span>@stevesepp87</span>
-              </p>
-              <p class="text-base">
-                <i class="bi bi-twitter mr-1"></i>
-                <a class="link link-accent link-hover" href="https://x.com/SteveSepp87">@SteveSepp87</a>
-              </p>
-              <p class="text-base">
-                <i class="bi bi-youtube mr-1"></i>
-                <a class="link link-accent link-hover" href="https://www.youtube.com/@stevesepp87">尾矢すみ</a>
-              </p>
-              <p class="text-base">
-                <i class="bi bi-youtube mr-1"></i>
-                <a class="link link-accent link-hover" href="https://www.youtube.com/@尾矢すみsub">尾矢すみSub</a>
-              </p>
-              <p class="text-base">
-                <i class="bi bi-box-arrow-up-right mr-1"></i>
-                <button class="link link-accent link-hover" data-dialog-toggle="modal__mobilegames">手遊</button>
-              </p>
-            </div>
+    <dialog class="modal" id="modal__about">
+      <div class="modal-box max-w-prose border h-svh border-slate-400">
+        <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
+        <div class="md:text-2xl text-xl font-bold">自介</div>
+        <hr class="my-8" />
+        <div class="grid gap-x-8 grid-cols-1 md:grid-cols-2">
+          <img src="static/img/shanhai-nobg-flip.webp" />
+          <div class="text-base">
+            <p class="font-bold uppercase" style="color: #73c2fb">Oya Sumi</p>
+            <p class="text-3xl font-bold" style="color: #73c2fb">尾矢すみ</p>
+            <p style="color: #73c2fb">酥米、林昕渪</p>
+            <br />
+            <p>○ FPS Games</p>
+            <p>△ Bass Guitar</p>
+            <p>△ Illustration</p>
+            <p>○ Weeb</p>
+            <div class="divider"></div>
+            <p class="text-base">
+              <i class="bi-discord mr-1"></i>
+              <span>@stevesepp87</span>
+            </p>
+            <p class="text-base">
+              <i class="bi bi-twitter mr-1"></i>
+              <a class="link link-accent link-hover" href="https://x.com/SteveSepp87">@SteveSepp87</a>
+            </p>
+            <p class="text-base">
+              <i class="bi bi-youtube mr-1"></i>
+              <a class="link link-accent link-hover" href="https://www.youtube.com/@stevesepp87">尾矢すみ</a>
+            </p>
+            <p class="text-base">
+              <i class="bi bi-youtube mr-1"></i>
+              <a class="link link-accent link-hover" href="https://www.youtube.com/@尾矢すみsub">尾矢すみSub</a>
+            </p>
+            <p class="text-base">
+              <i class="bi bi-box-arrow-up-right mr-1"></i>
+              <button class="link link-accent link-hover" data-dialog-toggle="modal__mobilegames">手遊</button>
+            </p>
           </div>
-          <div class="divider"></div>
         </div>
-        <div class="bg-slate-800 grayscale-50 border border-slate-600 z-0 h-[500%] w-[500%] fixed -rotate-[24deg] md:rotate-12 top-1/6 md:-top-9/12 left-0 md:left-1/4"></div>
+        <div class="divider"></div>
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__about"></div>
     </dialog>
-    <dialog class="modal p-4" id="modal__songlist">
-      <div class="modal-box max-w-prose border border-slate-400">
+    <dialog class="modal" id="modal__songlist">
+      <div class="modal-box max-w-prose border h-svh border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__songlist">✕</button>
         <div class="md:text-2xl text-xl font-bold">歌單推薦</div>
         <hr class="my-8" />
@@ -99,8 +96,8 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__songlist"></div>
     </dialog>
-    <dialog class="modal p-4" id="modal__discord">
-      <div class="modal-box max-w-prose border border-slate-400">
+    <dialog class="modal" id="modal__discord">
+      <div class="modal-box max-w-prose border h-svh border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__discord">✕</button>
         <div class="md:text-2xl text-xl font-bold mb-8">非官方 Gawr Gura Discord 粉絲群</div>
         <div class="mockup-window bg-base-300 border w-full">
@@ -129,8 +126,8 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__discord"></div>
     </dialog>
-    <dialog class="modal p-4" id="modal__mobilegames">
-      <div class="modal-box max-w-prose border border-slate-400">
+    <dialog class="modal" id="modal__mobilegames">
+      <div class="modal-box max-w-prose border h-svh border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__mobilegames">✕</button>
         <div class="md:text-2xl text-xl font-bold">手遊</div>
         <hr class="my-8" />
