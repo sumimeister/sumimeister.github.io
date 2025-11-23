@@ -22,7 +22,7 @@ layer(utilities);
 }
 
 @utility view-tile {
-  @apply h-svh	w-full;
+  @apply h-dvh	w-full;
   @apply bg-transparent;
 }
 
