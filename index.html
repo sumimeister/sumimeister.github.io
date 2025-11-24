@@ -35,14 +35,17 @@
         </aside>
       </footer>
     </div>
+    <!-- Modal About -->
     <dialog class="modal" id="modal__about">
-      <div class="modal-box max-w-prose max-h-dvh border border-slate-400">
+      <div class="modal-box max-w-prose max-h-[90dvh] border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
         <div class="md:text-2xl text-xl font-bold">Profile</div>
         <hr class="mb-8 mt-6" />
         <div class="grid gap-x-8 grid-cols-2">
-          <div class="m-auto max-sm:border max-sm:rounded-full max-sm:size-32 sm:row-span-2 overflow-hidden">
-            <img class="max-sm:scale-200 origin-[50%_10%]" src="static/img/shanhai-nobg-flip.webp" />
+          <div class="m-auto max-sm:avatar sm:row-span-2">
+            <div class="max-sm:w-32 max-sm:rounded-full max-sm:ring max-sm:ring-offset-3 max-sm:ring-secondary max-sm:ring-offset-base-100">
+              <img class="max-sm:scale-200 origin-[50%_10%]" src="static/img/shanhai-nobg-flip.webp" />
+            </div>
           </div>
           <div class="text-base my-auto">
             <p class="font-bold uppercase" style="color: #73c2fb">Oya Sumi</p>
@@ -52,32 +55,32 @@
           <div class="text-base max-sm:col-span-2">
             <div class="divider"></div>
             <div class="mt-4">
-              <span class="inline-flex items-center rounded-md bg-pink-400/10 px-2 py-1 my-1 inset-ring inset-ring-pink-400/20">
-                <i class="bi bi-dash-lg text-pink-400 mr-2"></i>
+              <span class="badge badge-outline badge-secondary py-3.5 my-1 bg-secondary/10">
+                <i class="bi bi-dash-lg"></i>
                 INTP
               </span>
-              <span class="inline-flex items-center rounded-md bg-red-400/10 px-2 py-1 my-1 inset-ring inset-ring-red-400/20">
-                <i class="bi bi-x-lg text-red-400 mr-2"></i>
+              <span class="badge badge-outline badge-error py-3.5 my-1 bg-error/10">
+                <i class="bi bi-x-lg"></i>
                 Social Anxiety
               </span>
-              <span class="inline-flex items-center rounded-md bg-green-400/10 px-2 py-1 my-1 inset-ring inset-ring-green-400/20">
-                <i class="bi bi-circle-fill text-green-400 mr-2"></i>
+              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-circle-fill"></i>
                 FPS Gamer
               </span>
-              <span class="inline-flex items-center rounded-md bg-green-400/10 px-2 py-1 my-1 inset-ring inset-ring-green-400/20">
-                <i class="bi bi-circle-fill text-green-400 mr-2"></i>
+              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-circle-fill"></i>
                 Weeb
               </span>
-              <span class="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 my-1 inset-ring inset-ring-yellow-400/20">
-                <i class="bi bi-triangle-fill text-yellow-400 mr-2"></i>
+              <span class="badge badge-outline badge-warning py-3.5 my-1 bg-warning/10">
+                <i class="bi bi-triangle-fill"></i>
                 Illustrator
               </span>
-              <span class="inline-flex items-center rounded-md bg-green-400/10 px-2 py-1 my-1 inset-ring inset-ring-green-400/20">
-                <i class="bi bi-circle-fill text-green-400 mr-2"></i>
+              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-circle-fill"></i>
                 Programmer
               </span>
-              <span class="inline-flex items-center rounded-md bg-yellow-400/10 px-2 py-1 my-1 inset-ring inset-ring-yellow-400/20">
-                <i class="bi bi-triangle-fill text-yellow-400 mr-2"></i>
+              <span class="badge badge-outline badge-warning py-3.5 my-1 bg-warning/10">
+                <i class="bi bi-triangle-fill"></i>
                 Bassist
               </span>
             </div>
@@ -115,6 +118,7 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__about"></div>
     </dialog>
+    <!-- Modal Playlist -->
     <dialog class="modal" id="modal__songlist">
       <div class="modal-box max-w-prose max-h-dvh border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__songlist">✕</button>
@@ -133,6 +137,7 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__songlist"></div>
     </dialog>
+    <!-- Modal Discord -->
     <dialog class="modal" id="modal__discord">
       <div class="modal-box max-w-prose max-h-dvh border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__discord">✕</button>
@@ -163,6 +168,7 @@
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__discord"></div>
     </dialog>
+    <!-- Modal Mobile Games -->
     <dialog class="modal" id="modal__mobilegames">
       <div class="modal-box max-w-prose max-h-dvh border border-slate-400">
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__mobilegames">✕</button>
@@ -173,6 +179,10 @@
             <div class="text-base">
               <p class="text-2xl font-bold" title="少女前線">格里芬指揮官</p>
               <p>UID: 3447</p>
+              <a class="button" href="#" data-dialog-toggle="modal__gfprofile">
+                <i class="bi bi-info-circle-fill"></i>
+                ID Card
+              </a>
             </div>
           </div>
           <div class="divider"></div>
@@ -181,6 +191,10 @@
             <div class="text-base">
               <p class="text-2xl font-bold" title="少女前線2：追放">指揮官</p>
               <p>UID: 3372080</p>
+              <a class="button" href="#" data-dialog-toggle="modal__gf2profile">
+                <i class="bi bi-info-circle-fill"></i>
+                ID Card
+              </a>
             </div>
           </div>
           <div class="divider"></div>
@@ -194,6 +208,48 @@
           <div class="divider"></div>
         </div>
       </div>
+      <div class="modal-backdrop" data-dialog-toggle="modal__mobilegames"></div>
+    </dialog>
+    <!-- Modal Mobile Games Profiles -->
+    <dialog class="modal" id="modal__gfprofile">
+      <div class="modal-box container max-h-dvh bg-transparent overflow-visible">
+        <div class="hover-3d">
+          <!-- content -->
+          <figure class="max-w-dvw">
+            <img src="static/img/gf-profile.webp" />
+          </figure>
+          <!-- 8 empty divs needed for the 3D effect -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="modal-backdrop" data-dialog-toggle="modal__gfprofile"></div>
+    </dialog>
+    <dialog class="modal" id="modal__gf2profile">
+      <div class="modal-box container max-h-dvh bg-transparent overflow-visible">
+        <div class="hover-3d">
+          <!-- content -->
+          <figure class="max-w-dvw md:max-w-[50dvw]">
+            <img src="static/img/gf2-profile.webp" />
+          </figure>
+          <!-- 8 empty divs needed for the 3D effect -->
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </div>
+      </div>
+      <div class="modal-backdrop" data-dialog-toggle="modal__gf2profile"></div>
     </dialog>
   </body>
 </html>
