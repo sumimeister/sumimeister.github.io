@@ -41,9 +41,11 @@
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__about">✕</button>
         <div class="md:text-2xl text-xl font-bold">Profile</div>
         <hr class="mb-8 mt-6" />
-        <div class="grid gap-x-8 grid-cols-2">
+        <div class="grid gap-x-4 grid-cols-2">
           <div class="m-auto max-sm:avatar sm:row-span-2">
-            <div class="max-sm:w-32 max-sm:rounded-full max-sm:ring max-sm:ring-offset-3 max-sm:ring-secondary max-sm:ring-offset-base-100">
+            <div
+              class="max-sm:w-32 max-sm:rounded-full max-sm:ring max-sm:ring-offset-3 max-sm:ring-secondary max-sm:ring-offset-base-100"
+            >
               <img class="max-sm:scale-200 origin-[50%_10%]" src="static/img/shanhai-nobg-flip.webp" />
             </div>
           </div>
@@ -55,33 +57,45 @@
           <div class="text-base max-sm:col-span-2">
             <div class="divider"></div>
             <div class="mt-4">
-              <span class="badge badge-outline badge-secondary py-3.5 my-1 bg-secondary/10">
-                <i class="bi bi-dash-lg"></i>
+              <span class="badge md:badge-lg badge-outline badge-secondary py-3.5 my-1 bg-secondary/10">
+                <i class="bi bi-person-fill"></i>
                 INTP
               </span>
-              <span class="badge badge-outline badge-error py-3.5 my-1 bg-error/10">
-                <i class="bi bi-x-lg"></i>
+              <span class="badge md:badge-lg badge-outline badge-error py-3.5 my-1 bg-error/10">
+                <i class="bi bi-person-dash-fill"></i>
                 Social Anxiety
               </span>
-              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
+              <span class="badge md:badge-lg badge-outline badge-info py-3.5 my-1 bg-info/10">
                 <i class="bi bi-circle-fill"></i>
-                FPS Gamer
+                百鬼組
               </span>
-              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
+              <span class="badge md:badge-lg badge-outline badge-info py-3.5 my-1 bg-info/10">
                 <i class="bi bi-circle-fill"></i>
-                Weeb
+                ヰ組
               </span>
-              <span class="badge badge-outline badge-warning py-3.5 my-1 bg-warning/10">
-                <i class="bi bi-triangle-fill"></i>
+              <span class="badge md:badge-lg badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-suit-heart-fill"></i>
+                Games
+              </span>
+              <span class="badge md:badge-lg badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-suit-heart-fill"></i>
+                Anime
+              </span>
+              <span class="badge md:badge-lg badge-outline badge-success py-3.5 my-1 bg-success/10">
+                <i class="bi bi-suit-heart-fill"></i>
+                Vtubers
+              </span>
+              <span class="badge md:badge-lg badge-outline badge-warning py-3.5 my-1 bg-warning/10">
+                <i class="bi bi-person-heart"></i>
                 Illustrator
               </span>
-              <span class="badge badge-outline badge-success py-3.5 my-1 bg-success/10">
-                <i class="bi bi-circle-fill"></i>
-                Programmer
-              </span>
-              <span class="badge badge-outline badge-warning py-3.5 my-1 bg-warning/10">
-                <i class="bi bi-triangle-fill"></i>
+              <span class="badge md:badge-lg badge-outline badge-warning py-3.5 my-1 bg-warning/10">
+                <i class="bi bi-person-heart"></i>
                 Bassist
+              </span>
+              <span class="badge md:badge-lg badge-outline badge-primary py-3.5 my-1 bg-primary/10">
+                <i class="bi bi-briefcase-fill"></i>
+                Programmer
               </span>
             </div>
           </div>
@@ -174,49 +188,52 @@
         <button class="btn btn-sm btn-circle btn-ghost float-right" data-dialog-toggle="modal__mobilegames">✕</button>
         <div class="md:text-2xl text-xl font-bold">Game Collection</div>
         <hr class="mb-8 mt-6" />
-          <div class="grid grid-cols-2">
-            <img class="h-20" src="static/img/gf.webp" />
+        <ul class="list">
+          <li class="list-row">
+            <div><img class="size-14" src="static/img/gfl-app.webp" /></div>
             <div class="text-base">
-              <p class="text-2xl font-bold" title="少女前線">格里芬指揮官</p>
-              <p>UID: 3447</p>
-              <a class="button" href="#" data-dialog-toggle="modal__gfprofile">
-                <i class="bi bi-info-circle-fill"></i>
-                ID Card
-              </a>
+              <div class="text-lg">少女前線</div>
+              <div class="font-semibold opacity-60">UID: 3447</div>
             </div>
-          </div>
-          <div class="divider"></div>
-          <div class="grid grid-cols-2">
-            <img class="h-20" src="static/img/gf2.webp" />
+            <a class="btn btn-square btn-ghost" data-dialog-toggle="modal__gflprofile">
+              <i class="bi bi-person-vcard text-2xl"></i>
+            </a>
+          </li>
+          <li class="list-row">
+            <div><img class="size-14" src="static/img/gfl2-app.webp" /></div>
             <div class="text-base">
-              <p class="text-2xl font-bold" title="少女前線2：追放">指揮官</p>
-              <p>UID: 3372080</p>
-              <a class="button" href="#" data-dialog-toggle="modal__gf2profile">
-                <i class="bi bi-info-circle-fill"></i>
-                ID Card
-              </a>
+              <div class="text-lg">少女前線2：追放</div>
+              <div class="font-semibold opacity-60">UID: 3372080</div>
             </div>
-          </div>
-          <div class="divider"></div>
-          <div class="grid grid-cols-2">
-            <img class="h-20" src="static/img/zzz.webp" />
+            <a class="btn btn-square btn-ghost" data-dialog-toggle="modal__gflprofile">
+              <i class="bi bi-person-vcard text-2xl"></i>
+            </a>
+          </li>
+          <li class="list-row">
+            <div><img class="size-14" src="static/img/zzz-app.webp" /></div>
             <div class="text-base">
-              <p class="text-2xl font-bold" title="絕區零">繩匠</p>
-              <p>UID: 1312987284</p>
+              <div class="text-lg">絕區零</div>
+              <div class="font-semibold opacity-60">UID: 1312987284</div>
             </div>
-          </div>
-          <div class="divider"></div>
-        </div>
+          </li>
+          <li class="list-row">
+            <div><img class="size-14" src="static/img/cs2-app.webp" /></div>
+            <div class="text-base">
+              <div class="text-lg">Counter-Strike 2</div>
+            </div>
+          </li>
+        </ul>
+        <div class="divider"></div>
       </div>
       <div class="modal-backdrop" data-dialog-toggle="modal__mobilegames"></div>
     </dialog>
     <!-- Modal Mobile Games Profiles -->
-    <dialog class="modal" id="modal__gfprofile">
+    <dialog class="modal" id="modal__gflprofile">
       <div class="modal-box container max-h-dvh bg-transparent overflow-visible">
         <div class="hover-3d">
           <!-- content -->
           <figure class="max-w-dvw">
-            <img src="static/img/gf-profile.webp" />
+            <img src="static/img/gfl-profile.webp" />
           </figure>
           <!-- 8 empty divs needed for the 3D effect -->
           <div></div>
@@ -229,14 +246,14 @@
           <div></div>
         </div>
       </div>
-      <div class="modal-backdrop" data-dialog-toggle="modal__gfprofile"></div>
+      <div class="modal-backdrop" data-dialog-toggle="modal__gflprofile"></div>
     </dialog>
-    <dialog class="modal" id="modal__gf2profile">
+    <dialog class="modal" id="modal__gfl2profile">
       <div class="modal-box container max-h-dvh bg-transparent overflow-visible">
         <div class="hover-3d">
           <!-- content -->
           <figure class="max-w-dvw md:max-w-[50dvw]">
-            <img src="static/img/gf2-profile.webp" />
+            <img src="static/img/gfl2-profile.webp" />
           </figure>
           <!-- 8 empty divs needed for the 3D effect -->
           <div></div>
@@ -249,7 +266,7 @@
           <div></div>
         </div>
       </div>
-      <div class="modal-backdrop" data-dialog-toggle="modal__gf2profile"></div>
+      <div class="modal-backdrop" data-dialog-toggle="modal__gfl2profile"></div>
     </dialog>
   </body>
 </html>
